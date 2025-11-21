@@ -1,6 +1,6 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Flutter F logo smooth version -->
-  <path d="M32 8L52 28L42 38L22 18L32 8Z" fill="white"/>
-  <path d="M42 38L52 48L32 56L22 46L32 36L42 38Z" fill="white"/>
-  <path d="M32 36L22 46L12 36L22 26L32 36Z" fill="white" opacity="0.7"/>
+  <!-- Flutter logo - complete triangular design -->
+  <polygon points="32,8 56,32 48,40 24,16" fill="white"/>
+  <polygon points="48,40 56,48 40,64 32,56 40,48" fill="white"/>
+  <polygon points="32,56 40,48 24,32 16,40" fill="white" opacity="0.85"/>
 </svg>
