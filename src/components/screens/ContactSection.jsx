@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PixelCard from '../ui/PixelCard';
 import SocialLinks from '../ui/SocialLinks';
+import RetroToast from '../ui/RetroToast';
 
 const ContactSection = () => {
     const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ const ContactSection = () => {
     });
     const [isSending, setIsSending] = useState(false);
     const [isSent, setIsSent] = useState(false);
+    const [error, setError] = useState('');
 
     const handleChange = (e) => {
         setFormData({
@@ -20,6 +22,29 @@ const ContactSection = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        // Custom validation
+        if (!formData.name.trim()) {
+            setError('ERROR: NAME REQUIRED');
+            return;
+        }
+
+        if (!formData.email.trim()) {
+            setError('ERROR: EMAIL REQUIRED');
+            return;
+        }
+
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formData.email)) {
+            setError('ERROR: INVALID EMAIL');
+            return;
+        }
+
+        if (!formData.message.trim()) {
+            setError('ERROR: MESSAGE REQUIRED');
+            return;
+        }
 
         // Show sending animation
         setIsSending(true);
@@ -51,11 +76,13 @@ const ContactSection = () => {
 
     return (
         <section id="contact" className="min-h-screen flex flex-col justify-center items-center p-3 sm:p-6 md:p-8 pb-24 sm:pb-8">
+            {error && <RetroToast message={error} onClose={() => setError('')} />}
+
             <div className="max-w-2xl w-full">
                 <h2 className="text-2xl sm:text-3xl font-press-start mb-8 sm:mb-12 text-center text-shadow-retro">CONTACT</h2>
 
                 <PixelCard>
-                    <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6 font-vt323 text-lg sm:text-xl">
+                    <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6 font-vt323 text-lg sm:text-xl" noValidate>
                         <div className="flex flex-col gap-2">
                             <label htmlFor="name" className="uppercase">Name:</label>
                             <input
@@ -64,7 +91,6 @@ const ContactSection = () => {
                                 name="name"
                                 value={formData.name}
                                 onChange={handleChange}
-                                required
                                 className="bg-black border-2 border-white p-2 text-white focus:outline-none focus:bg-gray-900"
                                 placeholder="ENTER NAME"
                             />
@@ -78,7 +104,6 @@ const ContactSection = () => {
                                 name="email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                required
                                 className="bg-black border-2 border-white p-2 text-white focus:outline-none focus:bg-gray-900"
                                 placeholder="your.email@example.com"
                             />
@@ -91,7 +116,6 @@ const ContactSection = () => {
                                 name="message"
                                 value={formData.message}
                                 onChange={handleChange}
-                                required
                                 rows="5"
                                 className="bg-black border-2 border-white p-2 text-white focus:outline-none focus:bg-gray-900 resize-none"
                                 placeholder="TYPE MESSAGE..."
