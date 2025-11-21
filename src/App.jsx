@@ -6,6 +6,7 @@ import AboutSection from './components/screens/AboutSection';
 import ProjectsSection from './components/screens/ProjectsSection';
 import SkillsSection from './components/screens/SkillsSection';
 import ContactSection from './components/screens/ContactSection';
+import CursorGlow from './components/effects/CursorGlow';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -42,6 +43,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-black text-white font-courier selection:bg-white selection:text-black">
+      <CursorGlow />
       <main className="pb-20 md:pb-0">
         <Navigation activeSection={activeSection} onNavigate={handleNavigate} />
 
