@@ -171,6 +171,12 @@ section {
 /* Responsive font sizes */
 @media (max-width: 640px) {
   html {
-    font-size: 14px;
+    font-size: 15px;
+  }
+
+  /* Reduce spacing on mobile */
+  section {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
   }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutSection = () => {
     return (
-        <section id="about" className="min-h-screen flex flex-col justify-center items-center p-4 sm:p-6 md:p-8">
+        <section id="about" className="min-h-screen flex flex-col justify-center items-center p-3 sm:p-6 md:p-8">
             <div className="max-w-4xl w-full">
                 <h2 className="text-2xl sm:text-3xl font-press-start mb-8 sm:mb-12 text-center animate-fadeIn">ABOUT ME</h2>
 

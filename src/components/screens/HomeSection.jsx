@@ -3,8 +3,8 @@ import TypingEffect from '../effects/TypingEffect';
 
 const HomeSection = ({ onNavigate }) => {
     return (
-        <section id="home" className="min-h-screen flex flex-col justify-center items-center p-4 sm:p-6 md:p-8 pt-20 md:pt-0">
-            <div className="max-w-3xl w-full text-center space-y-6 sm:space-y-8">
+        <section id="home" className="min-h-screen flex flex-col justify-center items-center p-3 sm:p-6 md:p-8 pt-16 sm:pt-20 md:pt-0">
+            <div className="max-w-3xl w-full text-center space-y-4 sm:space-y-6 md:space-y-8">
                 <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-press-start leading-relaxed break-words">
                     <TypingEffect text="MIDHLAJ AM" speed={100} />
                 </h1>

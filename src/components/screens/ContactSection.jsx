@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PixelCard from '../ui/PixelCard';
-import RetroButton from '../ui/RetroButton';
 import SocialLinks from '../ui/SocialLinks';
 
 const ContactSection = () => {
@@ -51,12 +50,12 @@ const ContactSection = () => {
     };
 
     return (
-        <section id="contact" className="min-h-screen flex flex-col justify-center items-center p-8 pb-24 md:pb-8">
+        <section id="contact" className="min-h-screen flex flex-col justify-center items-center p-3 sm:p-6 md:p-8 pb-24 sm:pb-8">
             <div className="max-w-2xl w-full">
-                <h2 className="text-3xl font-press-start mb-12 text-center text-shadow-retro">CONTACT</h2>
+                <h2 className="text-2xl sm:text-3xl font-press-start mb-8 sm:mb-12 text-center text-shadow-retro">CONTACT</h2>
 
                 <PixelCard>
-                    <form onSubmit={handleSubmit} className="space-y-6 font-vt323 text-xl">
+                    <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6 font-vt323 text-lg sm:text-xl">
                         <div className="flex flex-col gap-2">
                             <label htmlFor="name" className="uppercase">Name:</label>
                             <input
@@ -103,8 +102,8 @@ const ContactSection = () => {
                             type="submit"
                             disabled={isSending || isSent}
                             className={`
-                w-full border-2 border-white px-6 py-2 
-                text-white font-press-start text-sm
+                w-full border-2 border-white px-4 sm:px-6 py-2 
+                text-white font-press-start text-xs sm:text-sm
                 transition-all duration-200
                 ${isSending ? 'animate-pulse bg-gray-800' : ''}
                 ${isSent ? 'bg-white text-black' : 'hover:bg-white hover:text-black'}
@@ -118,8 +117,8 @@ const ContactSection = () => {
                 </PixelCard>
 
                 {/* Social Media Links */}
-                <div className="mt-12">
-                    <h3 className="text-xl font-press-start text-center mb-6">CONNECT WITH ME</h3>
+                <div className="mt-8 sm:mt-12">
+                    <h3 className="text-lg sm:text-xl font-press-start text-center mb-4 sm:mb-6">CONNECT WITH ME</h3>
                     <SocialLinks />
                 </div>
             </div>
