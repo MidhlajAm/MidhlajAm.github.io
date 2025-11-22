@@ -7,11 +7,20 @@ const AboutSection = () => {
                 <h2 className="text-2xl sm:text-3xl font-press-start mb-8 sm:mb-12 text-center animate-fadeIn">ABOUT ME</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-                    <div className="flex items-center justify-center min-h-[250px] sm:min-h-[300px] border-4 border-white p-4 sm:p-6 animate-slideInLeft bg-black">
-                        {/* Profile placeholder */}
-                        <div className="w-32 h-32 sm:w-40 sm:h-40 border-4 border-white flex items-center justify-center">
-                            <span className="font-press-start text-4xl sm:text-5xl">MA</span>
-                        </div>
+                    <div className="relative flex items-center justify-center min-h-[250px] sm:min-h-[300px] border-4 border-white p-0 animate-slideInLeft bg-black overflow-hidden group">
+                        {/* Profile Image with retro filter */}
+                        <img
+                            src="/images/MIDHLAJ AM.PNG"
+                            alt="Midhlaj AM"
+                            className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                            style={{ filter: 'contrast(1.1) brightness(0.95)' }}
+                        />
+                        {/* Scanline overlay effect */}
+                        <div className="absolute inset-0 pointer-events-none opacity-20 group-hover:opacity-10 transition-opacity duration-500"
+                            style={{
+                                backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.1) 2px, rgba(255,255,255,0.1) 4px)'
+                            }}
+                        />
                     </div>
 
                     <div className="space-y-4 sm:space-y-6 font-vt323 text-lg sm:text-xl leading-relaxed animate-slideInRight">
