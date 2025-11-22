@@ -4,13 +4,13 @@ const SocialLinks = () => {
     const socialLinks = [
         {
             name: 'WhatsApp',
-            url: 'https://wa.me/YOUR_PHONE_NUMBER', // Replace with your WhatsApp number
+            url: 'https://wa.me/+918078336549', // Replace with your WhatsApp number
             icon: '/icons/whatsapp.svg',
             label: 'WHATSAPP'
         },
         {
             name: 'Instagram',
-            url: 'https://instagram.com/YOUR_USERNAME', // Replace with your Instagram username
+            url: 'https://instagram.com/_midhlaj_am_', // Replace with your Instagram username
             icon: '/icons/instagram.svg',
             label: 'INSTAGRAM'
         },
@@ -22,7 +22,7 @@ const SocialLinks = () => {
         },
         {
             name: 'X',
-            url: 'https://x.com/YOUR_USERNAME', // Replace with your X (Twitter) username
+            url: 'https://x.com/midhlaj_786', // Replace with your X (Twitter) username
             icon: '/icons/x.svg',
             label: 'X (TWITTER)'
         }
