@@ -1,11 +1,8 @@
 import React from 'react';
 
+import skills from '../../data/skills.json';
+
 const SkillsSection = () => {
-    const skills = {
-        "MOBILE": ["Flutter", "Dart", "Android", "iOS"],
-        "BACKEND": ["Firebase", "Cloud Functions", "Firestore", "REST APIs"],
-        "TOOLS": ["Git", "VS Code", "Figma", "Postman"]
-    };
 
     return (
         <section id="skills" className="min-h-screen flex flex-col justify-center items-center p-8">

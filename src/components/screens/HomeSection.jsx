@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import TypingEffect from '../effects/TypingEffect';
 
 const HomeSection = ({ onNavigate }) => {
@@ -28,6 +29,12 @@ const HomeSection = ({ onNavigate }) => {
                     >
                         VIEW PROJECTS
                     </button>
+                    <Link
+                        to="/blog"
+                        className="border-2 border-white px-4 sm:px-6 py-2 sm:py-3 text-white font-press-start text-xs sm:text-sm hover:bg-white hover:text-black transition-all duration-300 active:scale-95"
+                    >
+                        READ BLOG
+                    </Link>
                     <button
                         onClick={() => onNavigate('contact')}
                         className="border-2 border-white px-4 sm:px-6 py-2 sm:py-3 text-white font-press-start text-xs sm:text-sm hover:bg-white hover:text-black transition-all duration-300 active:scale-95"

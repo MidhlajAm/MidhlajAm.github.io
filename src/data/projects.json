@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Jigsaw Puzzle Game in Flutter",
+    "slug": "jigsaw-puzzle",
+    "description": "A beautiful, interactive Jigsaw Puzzle game in Flutter featuring custom difficulty levels, dynamic image fetching via Pexels API, and an immersive glassmorphism UI.",
+    "image": "/images/screenshots/jigsaw/Screenshot_20260527_163923.png",
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "GetX",
+      "Pexels API"
+    ],
+    "githubUrl": "https://github.com/MidhlajAm/jigsaw_puzzle",
+    "featured": true,
+    "overview": "Jigsaw Puzzle Pro is a polished, mobile-first Flutter application built with a focus on immersive aesthetics and replayability. The app leverages the GetX ecosystem for smooth state management and integrates the Pexels API so users can generate puzzles from thousands of stunning online landscapes, alongside an integrated coin and daily reward system.",
+    "screenshots": [
+      "/images/screenshots/jigsaw/Screenshot_20260527_163923.png",
+      "/images/screenshots/jigsaw/Screenshot_20260527_163946.png",
+      "/images/screenshots/jigsaw/Screenshot_20260527_164009.png",
+      "/images/screenshots/jigsaw/Screenshot_20260527_164031.png",
+      "/images/screenshots/jigsaw/Screenshot_20260527_164345.png",
+      "/images/screenshots/jigsaw/Screenshot_20260527_164358.png",
+      "/images/screenshots/jigsaw/Screenshot_20260527_164902.png"
+    ],
+    "features": [
+      "Multiple difficulty levels (3x4, 4x5, 6x7)",
+      "Dynamic image fetching using the Pexels API",
+      "Custom puzzles using local device gallery photos",
+      "Virtual coin system with daily login rewards",
+      "Relaxing background music and interactive sound effects",
+      "Immersive glassmorphism UI with smooth animations"
+    ],
+    "challenges": [
+      "Implementing dynamic grid slicing for various image aspect ratios and difficulties",
+      "Managing complex application state and routing smoothly using GetX",
+      "Securing and structuring API calls to Pexels without exposing environment variables",
+      "Optimizing the performance of glassmorphism UI layers alongside puzzle drag-and-drop mechanics"
+    ],
+    "learnings": [
+      "GetX significantly reduces boilerplate for state management, dependency injection, and routing",
+      "Using third-party APIs like Pexels creates endless, highly engaging dynamic content for casual games",
+      "Integrating subtle audio feedback and micro-animations massively improves the overall game feel"
+    ],
+    "techStack": [
+      "Flutter",
+      "Dart",
+      "GetX",
+      "HTTP",
+      "SharedPreferences",
+      "AudioPlayers",
+      "Google Fonts"
+    ]
+  },
+  {
+    "title": "MotionComfort",
+    "slug": "motion-comfort",
+    "description": "An Android application designed to reduce motion sickness by displaying synchronized visual cues based on real-time device motion. Built with Jetpack Compose, custom overlay rendering, and sensor-driven interactions.",
+    "image": "/images/projects/motioncomfort.png",
+    "technologies": [
+      "Kotlin",
+      "Jetpack Compose",
+      "MVVM",
+      "Android Sensors",
+      "Foreground Service"
+    ],
+    "githubUrl": "https://github.com/MidhlajAm/MotionComfort",
+    "demoUrl": "https://github.com/MidhlajAm/MotionComfortJP/releases/tag/JetpackCompose",
+    "featured": true,
+    "overview": "MotionComfort is a sensor-based Android application that helps reduce motion sickness while using a smartphone in moving vehicles. The app uses accelerometer data to generate motion-synchronized visual cues such as floating particles and horizon lines, reducing the sensory conflict between visual perception and vestibular feedback.",
+    "screenshots": [
+      "https://res.cloudinary.com/dezwll9jv/image/upload/v1776359794/Screenshot_20260416-221023_hkvajn.jpg",
+      "https://res.cloudinary.com/dezwll9jv/image/upload/v1776360670/Screenshot_20260416-225657_brjy37.jpg"
+    ],
+    "features": [
+      "Real-time motion synchronization using device sensors",
+      "Floating particle visual cue system",
+      "Steady horizon visualization mode",
+      "Customizable cue colors",
+      "Adjustable sensitivity and cue intensity",
+      "Overlay support across applications",
+      "Foreground service for continuous tracking",
+      "Modern Jetpack Compose UI"
+    ],
+    "challenges": [
+      "Implementing Android overlay permissions across modern Android versions",
+      "Handling foreground service restrictions introduced in Android 14+",
+      "Creating smooth sensor-driven animations without affecting performance",
+      "Balancing visual cue responsiveness and user comfort",
+      "Managing touch-through overlays while rendering on top of other apps"
+    ],
+    "learnings": [
+      "Working with Android SensorManager and accelerometer data",
+      "Building foreground services with modern Android requirements",
+      "Creating custom Canvas-based rendering systems",
+      "Implementing overlay windows using WindowManager",
+      "Designing reactive UIs using Jetpack Compose and StateFlow",
+      "Handling runtime permissions and system-level Android APIs"
+    ],
+    "techStack": [
+      "Kotlin",
+      "Jetpack Compose",
+      "MVVM",
+      "StateFlow",
+      "Android SensorManager",
+      "Foreground Service",
+      "WindowManager Overlay",
+      "Canvas Rendering"
+    ]
+  }
+]

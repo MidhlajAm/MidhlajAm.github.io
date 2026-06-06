@@ -1,11 +1,9 @@
-import React, { createContext, useState, useContext } from 'react';
-import useSound from 'use-sound';
+import React, { useState } from 'react';
+import { SoundContext } from './sound';
 
 // Placeholder for sound files - in a real app, these would be imported
 // import clickSfx from '/sounds/click.mp3';
 // import hoverSfx from '/sounds/hover.mp3';
-
-const SoundContext = createContext();
 
 export const SoundProvider = ({ children }) => {
     const [isMuted, setIsMuted] = useState(false);
@@ -34,5 +32,3 @@ export const SoundProvider = ({ children }) => {
         </SoundContext.Provider>
     );
 };
-
-export const useRetroSound = () => useContext(SoundContext);

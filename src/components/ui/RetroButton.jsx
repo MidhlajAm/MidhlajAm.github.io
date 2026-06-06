@@ -1,5 +1,5 @@
 import React from 'react';
-import { useRetroSound } from '../../context/SoundContext';
+import { useRetroSound } from '../../context/sound';
 
 const RetroButton = ({ children, onClick, className = '' }) => {
     const { playClick, playHover } = useRetroSound();

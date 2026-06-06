@@ -1,0 +1,44 @@
+[
+  {
+    "type": "Education",
+    "title": "Computer Science Student",
+    "organization": "Academic Journey",
+    "period": "Present",
+    "description": "Building a strong foundation in software development, mobile app engineering, databases, and practical project delivery."
+  },
+  {
+    "type": "Internship",
+    "title": "Mobile App Development Intern",
+    "organization": "Quadvare Technologies",
+    "period": "Internship",
+    "description": "Worked on app development workflows, production-minded UI implementation, debugging, and collaboration inside a technology team."
+  },
+  {
+    "type": "Leadership",
+    "title": "Student Coordinator",
+    "organization": "FOSS Club",
+    "period": "Campus Role",
+    "description": "Coordinated community activities around open-source learning, peer collaboration, and student-led technical engagement."
+  },
+  {
+    "type": "Open Source",
+    "title": "Contributor",
+    "organization": "Open Source Projects",
+    "period": "Ongoing",
+    "description": "Participates in open-source culture through learning, documentation, collaboration, and practical contribution."
+  },
+  {
+    "type": "Workshops",
+    "title": "Technical Workshop Participant",
+    "organization": "Developer Communities",
+    "period": "Ongoing",
+    "description": "Attends and supports workshops focused on mobile development, tooling, and modern software practices."
+  },
+  {
+    "type": "Events",
+    "title": "Technical Event Volunteer",
+    "organization": "Campus and Community Events",
+    "period": "Ongoing",
+    "description": "Helps organize and participate in events that connect students with practical technology skills."
+  }
+]

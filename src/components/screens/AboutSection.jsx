@@ -12,7 +12,7 @@ const AboutSection = () => {
                         <img
                             src="/images/MIDHLAJ AM.PNG"
                             alt="Midhlaj AM"
-                            className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                            className="w-full h-full object-cover transition-all duration-500"
                             style={{ filter: 'contrast(1.1) brightness(0.95)' }}
                         />
                         {/* Scanline overlay effect */}

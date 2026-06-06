@@ -1,0 +1,27 @@
+[
+  {
+    "category": "Certificates",
+    "title": "Flutter Development Certifications",
+    "description": "Completed focused learning paths and practical exercises around Flutter, Dart, and mobile app development."
+  },
+  {
+    "category": "Workshops",
+    "title": "Mobile and Open Source Workshops",
+    "description": "Participated in technical workshops covering mobile development, collaboration, and developer tooling."
+  },
+  {
+    "category": "Volunteering",
+    "title": "Community Event Support",
+    "description": "Supported technical events and student activities through coordination, setup, and peer engagement."
+  },
+  {
+    "category": "Technical Events",
+    "title": "Hackathons and Developer Sessions",
+    "description": "Engaged in developer events that sharpen product thinking, implementation speed, and team collaboration."
+  },
+  {
+    "category": "Leadership",
+    "title": "FOSS Club Student Coordinator",
+    "description": "Helped create a student-friendly space for open-source awareness, technical curiosity, and collaborative learning."
+  }
+]

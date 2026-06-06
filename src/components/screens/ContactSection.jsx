@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PixelCard from '../ui/PixelCard';
 import SocialLinks from '../ui/SocialLinks';
 import RetroToast from '../ui/RetroToast';
+import RetroButton from '../ui/RetroButton';
 
 const ContactSection = () => {
     const [formData, setFormData] = useState({
@@ -144,6 +145,20 @@ const ContactSection = () => {
                 <div className="mt-8 sm:mt-12">
                     <h3 className="text-lg sm:text-xl font-press-start text-center mb-4 sm:mb-6">CONNECT WITH ME</h3>
                     <SocialLinks />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-8">
+                        <a href="https://github.com/midhlajam" target="_blank" rel="noopener noreferrer">
+                            <RetroButton className="w-full">GITHUB</RetroButton>
+                        </a>
+                        <a href="https://linkedin.com/in/midhlaj-am" target="_blank" rel="noopener noreferrer">
+                            <RetroButton className="w-full">LINKEDIN</RetroButton>
+                        </a>
+                        <a href="mailto:midhlaj.am786@gmail.com">
+                            <RetroButton className="w-full">EMAIL</RetroButton>
+                        </a>
+                        <a href="/resume.pdf" download>
+                            <RetroButton className="w-full">RESUME</RetroButton>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
