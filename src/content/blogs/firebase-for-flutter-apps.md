@@ -1,11 +1,11 @@
 ---
 title: "Firebase for Flutter Apps: A Practical Starter Map"
-description: "How I think about Firebase services when building Flutter apps, from authentication to Firestore structure and deployment habits."
-author: Midhlaj AM
 slug: flutter-for-firebase
 date: "2025-12-12"
+author: Midhlaj AM
 categories: ["Flutter", "Firebase"]
 image: "/images/blog/FirebaseforFlutter.png"
+description: "How I think about Firebase services when building Flutter apps, from authentication to Firestore structure and deployment habits."
 featured: false
 ---------------
 
