@@ -131,13 +131,13 @@ const routes = [
     description: project.description,
     image: project.image,
   })),
-  ...blogPosts.filter((post) => post.featured).map((post) => ({
-    route: `/blog/${post.slug}`,
-    title: post.title,
-    description: post.description,
-    image: post.image,
-    type: 'article',
-  })),
+  ...blogPosts.map((post) => ({
+  route: `/blog/${post.slug}`,
+  title: post.title,
+  description: post.description,
+  image: post.image,
+  type: 'article',
+})),
 ];
 
 routes.forEach((route) => writeRoute(template, route));
