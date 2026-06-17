@@ -130,7 +130,7 @@ const routes = [
     description: project.description,
     image: project.image,
   })),
-  ...blogPosts.map((post) => ({
+  ...blogPosts.filter((post) => post.featured).map((post) => ({
     route: `/blog/${post.slug}`,
     title: post.title,
     description: post.description,
