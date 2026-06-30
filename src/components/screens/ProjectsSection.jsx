@@ -14,8 +14,8 @@ const ProjectsSection = () => {
 
                 <div className="flex flex-wrap justify-center gap-8">
                     {featuredProjects.map((project) => (
-                        <div key={project.slug} className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] min-w-[280px] max-w-[400px]">
-                            <PixelCard className="flex flex-col h-full hover:translate-x-1 hover:-translate-y-1 transition-transform duration-200">
+                        <div key={project.slug} className="flex w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] min-w-[280px] max-w-[400px]">
+                            <PixelCard className="flex flex-col w-full hover:translate-x-1 hover:-translate-y-1 transition-transform duration-200">
                                 <div className="h-40 bg-gray-900 mb-4 overflow-hidden">
                                     <img src={project.image} alt={project.title} loading="lazy" className="w-full h-full object-cover" />
                                 </div>

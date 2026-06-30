@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import BlogCard from '../components/cards/BlogCard';
 import PageNav from '../components/layout/PageNav';
@@ -34,8 +34,8 @@ const BlogDetailPage = () => {
       />
       <PageNav />
       <section className="max-w-4xl mx-auto px-4 py-10 md:py-16">
-        <div className="mb-8">
-          <div className="flex flex-wrap gap-2 mb-4">
+        <div className="mb-8 text-center">
+          <div className="flex flex-wrap justify-center gap-2 mb-4">
             {post.categories.map((category) => <span key={category} className="font-vt323 text-lg border border-white px-2">{category}</span>)}
           </div>
           <h1 className="font-press-start text-2xl sm:text-4xl leading-relaxed mb-5">{post.title}</h1>
@@ -48,7 +48,7 @@ const BlogDetailPage = () => {
         {relatedPosts.length > 0 && (
           <div className="mt-14">
             <h2 className="font-press-start text-lg mb-5">RELATED POSTS</h2>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="flex flex-wrap justify-center gap-6">
               {relatedPosts.map((relatedPost) => <BlogCard key={relatedPost.slug} post={relatedPost} />)}
             </div>
           </div>
@@ -59,3 +59,4 @@ const BlogDetailPage = () => {
 };
 
 export default BlogDetailPage;
+

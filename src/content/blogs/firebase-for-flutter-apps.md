@@ -1,13 +1,13 @@
----
+﻿---
 title: "Firebase for Flutter Apps: A Practical Starter Map"
 description: "How I think about Firebase services when building Flutter apps, from authentication to Firestore structure and deployment habits."
 author: Midhlaj AM
-slug: flutter-for-firebase
+slug: firebase-for-flutter-apps
 date: "2025-12-12"
 categories: ["Flutter", "Firebase"]
-image: "/images/blog/FirebaseforFlutter.png"
+image: "/images/blog/firebase-for-flutter-apps.png"
 featured: false
----------------
+---
 
 ## Why Firebase fits Flutter projects
 
@@ -302,3 +302,4 @@ Start with the smallest backend surface your app needs, then grow it when the pr
 For Flutter developers, Firebase remains one of the fastest ways to move from an idea to a production-ready application. Its ecosystem allows developers to focus more on building useful products and less on infrastructure management.
 
 The best Firebase architecture is rarely the most complicated one. It is usually the one that stays maintainable, secure, and easy to understand as the application grows.
+

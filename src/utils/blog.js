@@ -1,4 +1,4 @@
-const blogModules = import.meta.glob('../content/blogs/*.md', {
+﻿const blogModules = import.meta.glob('../content/blogs/*.md', {
   query: '?raw',
   import: 'default',
   eager: true,
@@ -24,7 +24,7 @@ export const calculateReadingTime = (content) => {
 };
 
 const parseMarkdownPost = (filePath, raw) => {
-  const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
+  const match = raw.match(/^\uFEFF?---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
   const slug = filePath.split('/').pop().replace('.md', '');
 
   if (!match) {
@@ -77,3 +77,4 @@ export const getRelatedPosts = (post, limit = 3) => {
     .sort((a, b) => b.score - a.score)
     .slice(0, limit);
 };
+

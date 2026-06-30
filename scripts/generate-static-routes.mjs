@@ -1,4 +1,4 @@
-import fs from 'node:fs';
+﻿import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import projects from '../src/data/projects.json' with { type: 'json' };
@@ -24,7 +24,7 @@ const absoluteUrl = (value) => {
 };
 
 const parseFrontMatter = (raw, slug) => {
-  const match = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+  const match = raw.match(/^\uFEFF?---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
   if (!match) return { slug, title: slug, description: defaultDescription, image: defaultImage };
 
   const meta = match[1].split('\n').reduce((acc, line) => {
@@ -148,3 +148,5 @@ if (fs.existsSync(cnamePath)) {
 }
 
 console.log(`Generated ${routes.length} static route shells for GitHub Pages.`);
+
+

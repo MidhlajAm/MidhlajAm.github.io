@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import PageNav from '../components/layout/PageNav';
 import SEO from '../components/seo/SEO';
 import experience from '../data/experience.json';
@@ -12,7 +12,7 @@ const ExperiencePage = () => (
     />
     <PageNav />
     <section className="max-w-5xl mx-auto px-4 py-10 md:py-16">
-      <div className="mb-12">
+      <div className="mb-12 text-center">
         <p className="font-vt323 text-2xl text-gray-400 mb-3">TIMELINE</p>
         <h1 className="font-press-start text-3xl sm:text-4xl leading-relaxed">EXPERIENCE</h1>
       </div>
@@ -37,3 +37,4 @@ const ExperiencePage = () => (
 );
 
 export default ExperiencePage;
+

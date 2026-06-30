@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import PageNav from '../components/layout/PageNav';
 import SEO from '../components/seo/SEO';
@@ -49,11 +49,11 @@ const ProjectDetailPage = () => {
       <PageNav />
       <section className="max-w-6xl mx-auto px-4 py-10 md:py-16">
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-center mb-12">
-          <div>
+          <div className="text-center lg:text-left">
             <p className="font-vt323 text-2xl text-gray-400 mb-3">PROJECT FILE</p>
             <h1 className="font-press-start text-3xl sm:text-4xl leading-relaxed mb-5">{project.title}</h1>
             <p className="font-vt323 text-2xl text-gray-300 mb-6">{project.description}</p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3">
               {project.githubUrl && <a href={project.githubUrl} target="_blank" rel="noopener noreferrer"><RetroButton>GITHUB</RetroButton></a>}
               {project.demoUrl && <a href={project.demoUrl} target="_blank" rel="noopener noreferrer"><RetroButton>DEMO</RetroButton></a>}
             </div>
@@ -66,15 +66,15 @@ const ProjectDetailPage = () => {
           <p className="font-vt323 text-2xl text-gray-300 leading-relaxed">{project.overview}</p>
         </PixelCard>
 
-        <h2 className="font-press-start text-lg mb-5">SCREENSHOTS</h2>
-        <div className="grid md:grid-cols-3 gap-5 mb-8 items-center">
+        <h2 className="font-press-start text-lg mb-5 text-center">SCREENSHOTS</h2>
+        <div className="flex flex-wrap justify-center gap-5 mb-8 items-center">
           {project.screenshots.map((screenshot, index) => (
             <img 
               key={`${screenshot}-${index}`} 
               src={screenshot} 
               alt={`${project.title} screenshot ${index + 1}`} 
               loading="lazy" 
-              className="w-full object-contain cursor-zoom-in hover:opacity-80 transition-opacity max-h-[500px]" 
+              className="w-full max-w-[340px] object-contain cursor-zoom-in hover:opacity-80 transition-opacity max-h-[500px]" 
               onClick={() => setSelectedImage(screenshot)}
             />
           ))}
@@ -100,3 +100,6 @@ const ProjectDetailPage = () => {
 };
 
 export default ProjectDetailPage;
+
+
+

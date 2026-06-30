@@ -52,6 +52,84 @@
     ]
   },
   {
+    "title": "Studyco. Education App",
+    "slug": "studyco-education-app",
+    "description": "Studyco is a modern Flutter-based education app designed to give students easy, secure, and reliable access to study materials. It combines content discovery, offline access, secure authentication, and integrated payments into one seamless experience. The app is built with a scalable architecture using GetX and Firebase services, making it responsive, maintainable, and production-ready.",
+    "image": "/images/projects/studyco.png",
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "GetX",
+      "Firebase"
+    ],
+    "githubUrl": "https://github.com/MidhlajAm/Studyco",
+    "featured": true,
+    "overview": "Studyco is a comprehensive education application designed to enhance learning experiences through interactive content and personalized study materials.",
+    "screenshots": [
+      "https://github.com/MidhlajAm/studyco_app/blob/master/Screenshots/1.png?raw=true",
+      "https://github.com/MidhlajAm/studyco_app/blob/master/Screenshots/2.png?raw=true",
+      "https://github.com/MidhlajAm/studyco_app/blob/master/Screenshots/3.png?raw=true",
+      "https://github.com/MidhlajAm/studyco_app/blob/master/Screenshots/4.png?raw=true",
+      "https://github.com/MidhlajAm/studyco_app/blob/master/Screenshots/5.png?raw=true",
+      "https://github.com/MidhlajAm/studyco_app/blob/master/Screenshots/6.png?raw=true"
+    ],
+    "features": [
+      "Google Sign-In based authentication with Firebase Auth session management",
+      "Single-device login enforcement using unique device identifiers",
+      "Real-time account moderation (restrict/ban) via Firestore checks",
+      "Study material exploration with grid and list view options",
+      "Secure in-app PDF reading experience for educational materials",
+      "Offline download and caching of materials for internet-free access",
+      "Bookmarking system for quick access to important resources",
+      "Global cart flow for selecting premium study materials",
+      "Razorpay integration for secure checkout and payment processing",
+      "Profile management with editable academic/contact details and profile image upload",
+      "Push notifications via Firebase Cloud Messaging with local notification handling",
+      "Modern Flutter UI with skeleton loading states and pull-to-refresh interactions",
+      "Screenshot prevention for premium/protected study content"
+    ],
+    "challenges": [
+      "Enforcing single-device login reliably across app restarts and authentication refresh cycles",
+      "Coordinating user restriction/ban logic in real-time without degrading UX",
+      "Securing premium educational assets while still allowing smooth in-app access",
+      "Designing stable offline download and cache behavior for large PDF content",
+      "Integrating Razorpay payment flows with robust success/failure handling",
+      "Managing notification delivery consistency across foreground, background, and terminated states",
+      "Maintaining responsive UI states while combining Firestore streams, caching, and GetX reactivity"
+    ],
+    "learnings": [
+      "Building production-ready authentication flows with Google Sign-In and Firebase Auth",
+      "Using Firestore for real-time user state validation and moderation controls",
+      "Implementing secure content viewing and asset-protection patterns in Flutter",
+      "Designing offline-first access using cache managers and local persistence",
+      "Integrating third-party payment gateways (Razorpay) with environment-based configuration",
+      "Structuring medium-scale Flutter applications with GetX (routing, DI, and reactive state)",
+      "Using Firebase Storage for profile/media uploads and retrieval",
+      "Improving perceived performance with skeleton loaders and smooth refresh patterns",
+      "Combining FCM and local notifications for end-to-end push engagement"
+    ],
+    "techStack": [
+      "Dart",
+      "Flutter",
+      "GetX",
+      "Firebase Authentication",
+      "Cloud Firestore",
+      "Firebase Storage",
+      "Firebase Cloud Messaging (FCM)",
+      "Firebase Cloud Functions",
+      "Razorpay (razorpay_flutter)",
+      "flutter_dotenv",
+      "flutter_cache_manager",
+      "get_storage",
+      "sqflite",
+      "pdfrx",
+      "awesome_notifications",
+      "skeletonizer",
+      "liquid_pull_to_refresh",
+      "no_screenshot"
+    ]
+  },
+  {
     "title": "MotionComfort",
     "slug": "motion-comfort",
     "description": "An Android application designed to reduce motion sickness by displaying synchronized visual cues based on real-time device motion. Built with Jetpack Compose, custom overlay rendering, and sensor-driven interactions.",

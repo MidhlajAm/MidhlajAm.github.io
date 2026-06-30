@@ -155,7 +155,7 @@ const ContactSection = () => {
                         <a href="mailto:midhlaj.am786@gmail.com">
                             <RetroButton className="w-full">EMAIL</RetroButton>
                         </a>
-                        <a href="/resume.pdf" download>
+                        <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
                             <RetroButton className="w-full">RESUME</RetroButton>
                         </a>
                     </div>
