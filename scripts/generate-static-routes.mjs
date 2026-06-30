@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import projects from '../src/data/projects.json' with { type: 'json' };
 
+//here the previe link code
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
 const dist = path.join(root, 'dist');
@@ -131,12 +132,12 @@ const routes = [
     image: project.image,
   })),
   ...blogPosts.map((post) => ({
-    route: `/blog/${post.slug}`,
-    title: post.title,
-    description: post.description,
-    image: post.image,
-    type: 'article',
-  })),
+  route: `/blog/${post.slug}`,
+  title: post.title,
+  description: post.description,
+  image: post.image,
+  type: 'article',
+})),
 ];
 
 routes.forEach((route) => writeRoute(template, route));

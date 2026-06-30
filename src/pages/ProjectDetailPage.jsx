@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import PageNav from '../components/layout/PageNav';
 import SEO from '../components/seo/SEO';
@@ -67,14 +67,14 @@ const ProjectDetailPage = () => {
         </PixelCard>
 
         <h2 className="font-press-start text-lg mb-5 text-center">SCREENSHOTS</h2>
-        <div className="flex flex-wrap justify-center gap-5 mb-8 items-center">
+        <div className="flex overflow-x-auto md:flex-wrap md:justify-center snap-x snap-mandatory gap-5 mb-8 items-center pb-4 scroll-smooth">
           {project.screenshots.map((screenshot, index) => (
             <img 
               key={`${screenshot}-${index}`} 
               src={screenshot} 
               alt={`${project.title} screenshot ${index + 1}`} 
               loading="lazy" 
-              className="w-full max-w-[340px] object-contain cursor-zoom-in hover:opacity-80 transition-opacity max-h-[500px]" 
+              className="shrink-0 w-[85%] sm:w-full max-w-[340px] snap-center object-contain cursor-zoom-in hover:opacity-80 transition-opacity max-h-[500px]" 
               onClick={() => setSelectedImage(screenshot)}
             />
           ))}
